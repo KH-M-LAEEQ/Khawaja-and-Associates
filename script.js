@@ -12,6 +12,14 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+// Shared image-placeholder overlay for insight thumbnails and book covers —
+// shown up front when no image URL exists, or swapped in if one fails to load.
+const IMAGE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16"></rect><circle cx="9" cy="10" r="1.5"></circle><path d="M4 17l5-5 3 3 4-4 4 4"/></svg>';
+
+function imageFallback(label, sub, hiddenByDefault) {
+  return `<div class="img-fallback${hiddenByDefault ? ' hidden' : ''}">${IMAGE_ICON}<b>${label}</b>${sub ? `<span>${sub}</span>` : ''}</div>`;
+}
+
 function timeAgo(iso) {
   const diffMs = Date.now() - new Date(iso).getTime();
   const hours = Math.round(diffMs / 3.6e6);
@@ -40,12 +48,21 @@ async function loadInsights() {
 
       const article = document.createElement('article');
       article.innerHTML = `
-        <a class="insight-image" style="background-image:url('${image}')" href="${url}" target="_blank" rel="noopener" aria-label="Read on FBR: ${title}"></a>
+        <a class="insight-image" href="${url}" target="_blank" rel="noopener" aria-label="Read on FBR: ${title}">
+          <img src="${image}" alt="" loading="lazy">
+          ${imageFallback('Image unavailable', title, true)}
+        </a>
         <div class="insight-meta">FBR PRESS RELEASE • ${date}</div>
         <h3 title="${title}">${title}</h3>
         <a href="${url}" target="_blank" rel="noopener">Read on FBR ↗</a>
       `;
       insightGrid.appendChild(article);
+
+      const thumb = article.querySelector('.insight-image img');
+      thumb.addEventListener('error', () => {
+        thumb.remove();
+        article.querySelector('.img-fallback').classList.remove('hidden');
+      });
     });
 
     if (insightUpdated && data.fetchedAt) {
@@ -87,8 +104,9 @@ async function loadBooks() {
       const card = document.createElement('article');
       card.className = 'book-card';
       card.innerHTML = `
-        <div class="book-cover" data-fallback="${title}">
+        <div class="book-cover">
           ${cover ? `<img src="${cover}" alt="${title} — cover" loading="lazy">` : ''}
+          ${imageFallback(cover ? 'Cover unavailable' : 'Cover pending', title, Boolean(cover))}
         </div>
         <div class="book-info">
           ${year ? `<div class="book-year">${year}</div>` : ''}
@@ -100,17 +118,12 @@ async function loadBooks() {
       `;
       bookGrid.appendChild(card);
 
-      const coverEl = card.querySelector('.book-cover');
-      const img = coverEl.querySelector('img');
+      const img = card.querySelector('.book-cover img');
       if (img) {
-        coverEl.classList.add('has-cover');
         img.addEventListener('error', () => {
-          coverEl.classList.remove('has-cover');
           img.remove();
-          coverEl.textContent = title;
+          card.querySelector('.img-fallback').classList.remove('hidden');
         });
-      } else {
-        coverEl.textContent = title;
       }
     });
   } catch (err) {

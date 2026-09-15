@@ -66,9 +66,27 @@
     @apply absolute top-3 right-3 font-mono text-[10px] uppercase tracking-[0.14em] text-brass bg-parchment px-2 py-1 border border-brass/40;
   }
 
+  /* Shared image-placeholder overlay — used when an insight/book image is
+     missing or fails to load (script.js toggles this in, never removes it) */
+  .img-fallback {
+    @apply absolute inset-0 flex flex-col items-center justify-center gap-2 border border-dashed border-brass/40 bg-parchment/80 text-center px-4;
+  }
+  .img-fallback svg {
+    @apply w-6 h-6 text-brass/70;
+  }
+  .img-fallback b {
+    @apply font-mono text-[10px] uppercase tracking-[0.14em] font-normal text-brass;
+  }
+  .img-fallback span {
+    @apply font-serif text-[13px] text-graphite leading-snug line-clamp-2;
+  }
+
   /* JS-rendered: Tax Insights cards (script.js targets these class names directly) */
   .insight-image {
-    @apply block h-[210px] bg-[#c6c1b6] bg-cover bg-center;
+    @apply relative block h-[210px] overflow-hidden bg-parchment;
+  }
+  .insight-image img {
+    @apply absolute inset-0 w-full h-full object-cover;
   }
   .insight-meta {
     @apply font-mono text-[10px] tracking-[0.1em] text-brass mt-5 mx-6;
@@ -79,10 +97,10 @@
     @apply border border-line bg-parchment;
   }
   .book-cover {
-    @apply h-[260px] bg-[#c4c0b6] bg-cover bg-center grid place-items-center text-center text-[#777168] font-serif text-[15px] leading-tight p-4;
+    @apply relative h-[260px] overflow-hidden bg-parchment;
   }
-  .book-cover.has-cover {
-    @apply text-transparent;
+  .book-cover img {
+    @apply absolute inset-0 w-full h-full object-cover;
   }
   .book-info {
     @apply p-5;
