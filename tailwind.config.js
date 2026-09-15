@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./practice/*.html", "./script.js"],
+  content: [
+    "./app/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./lib/**/*.{js,jsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,9 +18,9 @@ module.exports = {
         dark: "#0e1216",
       },
       fontFamily: {
-        serif: ['"Newsreader"', "Georgia", "serif"],
-        sans: ['"DM Sans"', "Arial", "sans-serif"],
-        mono: ['"IBM Plex Mono"', "Menlo", "monospace"],
+        serif: ["var(--font-newsreader)", "Georgia", "serif"],
+        sans: ["var(--font-dm-sans)", "Arial", "sans-serif"],
+        mono: ["var(--font-ibm-plex-mono)", "Menlo", "monospace"],
       },
       fontSize: {
         "display-xl": ["clamp(2.75rem, 5vw, 4.75rem)", { lineHeight: "1.05" }],
