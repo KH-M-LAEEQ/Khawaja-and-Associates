@@ -1,4 +1,4 @@
-document.querySelector('.menu')?.addEventListener('click',()=>{const nav=document.querySelector('.nav nav');nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='72px';nav.style.right='0';nav.style.background='#f7f5f0';nav.style.padding='20px';nav.style.flexDirection='column';nav.style.border='1px solid #ddd9d0';});
+document.querySelector('.menu')?.addEventListener('click',(e)=>{const nav=document.querySelector('.nav nav');const open=nav.style.display==='flex';nav.style.display=open?'none':'flex';nav.style.position='absolute';nav.style.top='72px';nav.style.right='0';nav.style.background='#f8f7f3';nav.style.padding='20px';nav.style.flexDirection='column';nav.style.border='1px solid #d9d5c9';e.currentTarget.setAttribute('aria-expanded',open?'false':'true');});
 
 // Tax Insights — rendered from articles.json, which scripts/fetch-articles.mjs
 // refreshes from FBR's official press-release page. Only title/date/
