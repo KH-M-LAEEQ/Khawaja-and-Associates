@@ -1,0 +1,36 @@
+{
+  "publications": [
+    {
+      "title": "REPLACE WITH BOOK TITLE 1",
+      "author": "Khawaja Mahmood Ayaz",
+      "year": "20XX",
+      "cover": "assets/books/book-1.jpg",
+      "description": "One or two sentence description of what this book covers.",
+      "link": ""
+    },
+    {
+      "title": "REPLACE WITH BOOK TITLE 2",
+      "author": "Khawaja Mahmood Ayaz",
+      "year": "20XX",
+      "cover": "assets/books/book-2.jpg",
+      "description": "One or two sentence description of what this book covers.",
+      "link": ""
+    },
+    {
+      "title": "REPLACE WITH BOOK TITLE 3",
+      "author": "Khawaja Mahmood Ayaz",
+      "year": "20XX",
+      "cover": "assets/books/book-3.jpg",
+      "description": "One or two sentence description of what this book covers.",
+      "link": ""
+    },
+    {
+      "title": "REPLACE WITH BOOK TITLE 4",
+      "author": "Khawaja Mahmood Ayaz",
+      "year": "20XX",
+      "cover": "assets/books/book-4.jpg",
+      "description": "One or two sentence description of what this book covers.",
+      "link": ""
+    }
+  ]
+}

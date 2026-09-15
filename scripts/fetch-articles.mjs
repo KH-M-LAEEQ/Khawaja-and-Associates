@@ -5,7 +5,7 @@
 
 const SOURCE_URL = 'https://www.fbr.gov.pk/pr';
 const SOURCE_ORIGIN = 'https://www.fbr.gov.pk';
-const OUTPUT_PATH = new URL('../articles.json', import.meta.url);
+const OUTPUT_PATH = new URL('../public/articles.json', import.meta.url);
 const LOG_PATH = new URL('../fetch-articles.log', import.meta.url);
 const MAX_ARTICLES = 6;
 
