@@ -7,67 +7,126 @@
   <meta name="description" content="Comprehensive tax counsel for individuals, companies and organizations operating in Pakistan." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css" />
 </head>
 <body>
-  <div class="topbar">
+  <div class="bg-dark text-[#cdd2d7] px-[5vw] py-2.5 text-[11px] tracking-[0.11em] uppercase flex justify-between">
     <div>Tax Counsel &amp; Legal Advisory • Lahore, Pakistan</div>
     <div>Consultation by Appointment</div>
   </div>
 
-  <header class="nav">
-    <a class="brand" href="index.html#home">
-      <span class="crest">K&amp;A</span>
-      <span><b>KHAWAJA</b><small>AND ASSOCIATES</small></span>
+  <header class="nav h-[84px] px-[5vw] flex items-center justify-between bg-parchment/95 border-b border-line sticky top-0 z-10">
+    <a class="flex items-center gap-3 text-ink no-underline" href="index.html#home">
+      <span class="crest w-[42px] h-[42px] border border-brass grid place-items-center text-brass font-serif italic text-[17px]">K&amp;A</span>
+      <span><b class="block text-[14px] tracking-[0.14em]">KHAWAJA</b><small class="block text-[9px] tracking-[0.18em] text-graphite">AND ASSOCIATES</small></span>
     </a>
-    <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
-    <nav id="primary-nav">
-      <a href="index.html">About</a>
-      <a href="practice.html">Practice Areas</a>
-      <a href="index.html#professionals">Our Team</a>
-      <a href="index.html#publications">Publications</a>
-      <a href="index.html#insights">Tax Insights</a>
-      <a href="index.html#location">Location</a>
-      <a class="nav-cta" href="index.html#contact">Contact Chamber</a>
+    <button class="menu md:hidden bg-transparent border-0 text-2xl leading-none" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav id="primary-nav" class="hidden md:flex items-center gap-8">
+      <a class="text-ink no-underline text-[13px]" href="index.html">About</a>
+      <a class="text-ink no-underline text-[13px]" href="practice.html">Practice Areas</a>
+      <a class="text-ink no-underline text-[13px]" href="index.html#professionals">Our Team</a>
+      <a class="text-ink no-underline text-[13px]" href="index.html#publications">Publications</a>
+      <a class="text-ink no-underline text-[13px]" href="index.html#insights">Tax Insights</a>
+      <a class="text-ink no-underline text-[13px]" href="index.html#location">Location</a>
+      <a class="text-ink no-underline text-[13px] border border-ink px-4 py-2.5" href="index.html#contact">Contact Chamber</a>
     </nav>
   </header>
 
   <main>
-    <section class="section practice-detail-hero">
-      <a class="text-link" href="index.html#home">← Back to home</a>
-      <h1>Practice Areas</h1>
-      <p class="lead">Comprehensive tax counsel for individuals, companies and organizations operating in Pakistan.</p>
+    <section class="pt-16 md:pt-20 px-[7vw] pb-16">
+      <a class="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="index.html#home">← Back to home</a>
+      <h1 class="font-serif font-medium text-display-l mt-4 mb-3">Practice Areas</h1>
+      <p class="font-serif text-[19px] leading-[1.5] text-[#39434c] max-w-[700px]">Comprehensive tax counsel for individuals, companies and organizations operating in Pakistan.</p>
     </section>
 
-    <section class="section practice">
-      <div class="practice-grid">
-        <a href="practice/income-tax.html"><span>01</span><h3>Income Tax</h3><p>Advisory, returns, assessments, notices, audits and representation.</p></a>
-        <a href="practice/sales-tax.html"><span>02</span><h3>Sales Tax</h3><p>Registration, compliance, disputes and proceedings relating to sales tax.</p></a>
-        <a href="practice/tax-litigation.html"><span>03</span><h3>Tax Litigation</h3><p>Representation in tax disputes, appeals and litigation before relevant forums.</p></a>
-        <a href="practice/fbr-matters.html"><span>04</span><h3>FBR Matters</h3><p>Professional assistance with notices, inquiries, audits and departmental proceedings.</p></a>
-        <a href="practice/tax-advisory.html"><span>05</span><h3>Tax Advisory</h3><p>Practical advice for businesses, transactions, structures and ongoing obligations.</p></a>
-        <a href="practice/withholding-tax.html"><span>06</span><h3>Withholding Tax</h3><p>Guidance on withholding obligations, deductions, statements and disputes.</p></a>
-        <a href="practice/customs-duties.html"><span>07</span><h3>Customs &amp; Duties</h3><p>Tax and duty matters connected with imports, exports and customs issues.</p></a>
-        <a href="practice/provincial-taxes.html"><span>08</span><h3>Provincial Taxes</h3><p>Support on applicable provincial revenue and taxation matters.</p></a>
-        <a href="practice/trademark-registration.html"><span>09</span><h3>Trademark Registration</h3><p>Assistance with trademark filing, registration and related intellectual property matters.</p></a>
-        <a href="practice/banking-taxes.html"><span>10</span><h3>Banking Taxes</h3><p>Tax advisory and compliance matters specific to banks and financial institutions.</p></a>
+    <section class="py-16 md:py-20 px-[7vw] bg-[#121a22] text-[#f5f3ee]">
+      <div class="eyebrow !text-brass mb-5">FEDERAL TAXATION</div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#3b444c] mb-14">
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/income-tax.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">FEDERAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Income Tax</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Advisory, returns, assessments, notices, audits and representation.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/sales-tax.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">FEDERAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Sales Tax</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Registration, compliance, disputes and proceedings relating to sales tax.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/withholding-tax.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">FEDERAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Withholding Tax</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Guidance on withholding obligations, deductions, statements and disputes.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/fbr-matters.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">FEDERAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">FBR Matters</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Professional assistance with notices, inquiries, audits and departmental proceedings.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/customs-duties.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">FEDERAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Customs &amp; Duties</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Tax and duty matters connected with imports, exports and customs issues.</p>
+        </a>
+      </div>
+
+      <div class="eyebrow !text-brass mb-5">PROVINCIAL &amp; SECTOR-SPECIFIC</div>
+      <div class="grid sm:grid-cols-2 border-t border-l border-[#3b444c] mb-14">
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/provincial-taxes.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">PROVINCIAL</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Provincial Taxes</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Support on applicable provincial revenue and taxation matters.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/banking-taxes.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">SECTOR-SPECIFIC</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Banking Taxes</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Tax advisory and compliance matters specific to banks and financial institutions.</p>
+        </a>
+      </div>
+
+      <div class="eyebrow !text-brass mb-5">ADVISORY, LITIGATION &amp; IP</div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#3b444c]">
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/tax-advisory.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">ADVISORY</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Tax Advisory</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Practical advice for businesses, transactions, structures and ongoing obligations.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/tax-litigation.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">LITIGATION</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Tax Litigation</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Representation in tax disputes, appeals and litigation before relevant forums.</p>
+        </a>
+        <a class="group p-7 border-r border-b border-[#3b444c] min-h-[190px] block no-underline transition-colors duration-200 hover:bg-brass" href="practice/trademark-registration.html">
+          <span class="font-mono text-[10px] text-brass group-hover:text-[#121922] transition-colors">IP</span>
+          <h3 class="font-serif text-[22px] mt-5 mb-2 group-hover:text-[#121922] transition-colors">Trademark Registration</h3>
+          <p class="text-[12px] text-[#aeb5bc] group-hover:text-[#2b241a] transition-colors">Assistance with trademark filing, registration and related intellectual property matters.</p>
+        </a>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="py-16 md:py-20 px-[7vw] bg-[#b18b4d] text-white flex flex-col md:flex-row items-center justify-between gap-8">
       <div>
-        <div class="section-label">LET'S DISCUSS YOUR MATTER</div>
-        <h2>Have a tax matter that<br>needs <em>counsel?</em></h2>
+        <div class="font-mono text-label uppercase text-[#e8d7b6]">LET'S DISCUSS YOUR MATTER</div>
+        <h2 class="font-serif font-medium text-display-l mt-3">Have a tax matter that<br>needs <em class="italic text-white">counsel?</em></h2>
       </div>
-      <a class="button light" href="index.html#contact">Contact the Chamber →</a>
+      <a class="btn-light" href="index.html#contact">Contact the Chamber →</a>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-brand"><span class="crest">K&amp;A</span><div><b>KHAWAJA AND ASSOCIATES</b><small>Tax Lawyers &amp; Legal Advisory • Lahore, Pakistan</small></div></div>
-    <div class="footer-links"><a href="index.html">About</a><a href="practice.html">Practice</a><a href="index.html#professionals">Team</a><a href="index.html#insights">Insights</a><a href="index.html#location">Location</a><a href="index.html#contact">Contact</a></div>
-    <div class="copyright">© 2026 Khawaja and Associates. All rights reserved.</div>
+  <footer class="bg-dark text-[#c9cdd0] px-[7vw] py-11 grid md:grid-cols-[1fr_auto] gap-6">
+    <div class="flex items-center gap-3 text-white">
+      <span class="seal w-10 h-10 text-[12px]"><span class="seal-mark">K&amp;A</span></span>
+      <div><b class="block">KHAWAJA AND ASSOCIATES</b><small class="block text-[#818991] mt-1">Tax Lawyers &amp; Legal Advisory • Lahore, Pakistan</small></div>
+    </div>
+    <div class="flex gap-5 items-center flex-wrap">
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="index.html">About</a>
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="practice.html">Practice</a>
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="index.html#professionals">Team</a>
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="index.html#insights">Insights</a>
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="index.html#location">Location</a>
+      <a class="text-[#c9cdd0] no-underline text-[11px]" href="index.html#contact">Contact</a>
+    </div>
+    <div class="col-span-full border-t border-[#2b333a] pt-5 text-[#747d85] text-[9px]">© 2026 Khawaja and Associates. All rights reserved.</div>
   </footer>
 
   <script src="script.js"></script>
