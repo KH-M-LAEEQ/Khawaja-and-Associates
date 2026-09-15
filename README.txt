@@ -1,15 +1,16 @@
-TAX CHAMBER FRONTEND CONCEPT
+KHAWAJA AND ASSOCIATES — NEXT.JS APP
 
-Open index.html in a browser to view the responsive frontend.
+Run `npm install` then `npm run dev` and open http://localhost:3000.
+`npm run build && npm run start` runs a production build locally.
 
-This is a design prototype using placeholder chamber/lawyer information and photo blocks.
-Replace:
-- Chamber name/logo
-- Father's name, credentials and biography
-- Uncle's name, credentials and biography
-- Office address, phone and email
-- Lawyer photographs
-- Tax insight articles
-- Practice-area wording after legal review
+Content still marked as placeholder (see docs/redesign/00-audit.md for the
+full audit) and not yet replaced:
+- Two of four lawyer bios and two portraits (Team section)
+- Publications (books.json) — entirely placeholder entries
+- Practice-area wording, pending legal review
 
-The contact form is currently demo-only and should be connected to a backend/email service.
+The contact form is currently demo-only and should be connected to a
+backend/email service.
+
+`npm run fetch:articles` refreshes public/articles.json from FBR's
+official press-release page (see scripts/fetch-articles.mjs).
