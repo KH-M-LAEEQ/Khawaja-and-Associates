@@ -110,6 +110,10 @@ export default function HomePage() {
                   <p>Member, Lahore Tax Advisors Club</p>
                   <span className="reg-year">—</span>
                 </div>
+                <div className="reg-row">
+                  <p>Executive Member, Punjab Bar Council</p>
+                  <span className="reg-year">—</span>
+                </div>
               </div>
             </div>
           </article>
