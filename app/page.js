@@ -165,33 +165,59 @@ export default function HomePage() {
           In honor of those who <em className="italic text-brass">came before.</em>
         </h2>
 
-        <article className="bg-[#182129] border border-[#3b444c] max-w-[560px]">
-          <div className="pending h-[220px] flex items-center justify-center !bg-[#1c2530] !border-brass/30">
-            <span className="pending-tag !bg-[#1c2530]">Photo pending</span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[#aeb5bc]">Portrait</span>
-          </div>
-          <div className="p-8">
-            <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
-            <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Asghar</h3>
-            <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
-              Senior Consultant • Tax Practitioner • Advocate High Court
-            </p>
-            <div>
-              <div className="reg-row !border-[#3b444c]">
-                <p className="!text-[#d3d8dc]">Former General Secretary, Lahore Tax Bar Association</p>
-                <span className="reg-year">—</span>
-              </div>
-              <div className="reg-row !border-[#3b444c]">
-                <p className="!text-[#d3d8dc]">Member — Lahore High Court Bar Association</p>
-                <span className="reg-year">1964</span>
-              </div>
-              <div className="reg-row !border-[#3b444c]">
-                <p className="!text-[#d3d8dc]">Member, Punjab Bar Council</p>
-                <span className="reg-year">—</span>
+        <div className="flex flex-wrap gap-6 items-stretch">
+          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[560px]">
+            <div className="pending h-[220px] flex items-center justify-center !bg-[#1c2530] !border-brass/30">
+              <span className="pending-tag !bg-[#1c2530]">Photo pending</span>
+              <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[#aeb5bc]">Portrait</span>
+            </div>
+            <div className="p-8">
+              <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
+              <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Asghar</h3>
+              <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
+                Senior Consultant • Tax Practitioner • Advocate High Court
+              </p>
+              <div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Former General Secretary, Lahore Tax Bar Association</p>
+                  <span className="reg-year">—</span>
+                </div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Member — Lahore High Court Bar Association</p>
+                  <span className="reg-year">1964</span>
+                </div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Member, Punjab Bar Council</p>
+                  <span className="reg-year">—</span>
+                </div>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[560px]">
+            <div className="pending h-[220px] flex items-center justify-center !bg-[#1c2530] !border-brass/30">
+              <span className="pending-tag !bg-[#1c2530]">Photo pending</span>
+              <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[#aeb5bc]">Portrait</span>
+            </div>
+            <div className="p-8">
+              <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
+              <h3 className="font-serif text-[26px] my-1">Khawaja Saeed uz Zafar</h3>
+              <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
+                Senior Advocate • Supreme Court of Pakistan
+              </p>
+              <div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Additional Attorney General of Pakistan</p>
+                  <span className="reg-year">—</span>
+                </div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Deputy Attorney General of Pakistan</p>
+                  <span className="reg-year">—</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <PublicationsSection />
