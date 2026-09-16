@@ -95,6 +95,10 @@ export default function HomePage() {
                   <span className="reg-year">1995</span>
                 </div>
                 <div className="reg-row">
+                  <p>Executive Member, Punjab Bar Council</p>
+                  <span className="reg-year">—</span>
+                </div>
+                <div className="reg-row">
                   <p>Youngest-ever General Secretary, Lahore Tax Bar Association</p>
                   <span className="reg-year">—</span>
                 </div>
@@ -108,10 +112,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Member, Lahore Tax Advisors Club</p>
-                  <span className="reg-year">—</span>
-                </div>
-                <div className="reg-row">
-                  <p>Executive Member, Punjab Bar Council</p>
                   <span className="reg-year">—</span>
                 </div>
               </div>
