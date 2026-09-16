@@ -34,10 +34,14 @@ export default function HomePage() {
         <div className="relative max-w-[470px] mx-auto w-full hidden md:block">
           <div className="bg-[#d5d0c5] p-4 border border-[#b8763f] shadow-lift">
             <img
-              className="h-[460px] w-full object-cover object-center"
-              src="/assets/law-books.jpg"
-              alt="Constitution of Pakistan, Pakistan Penal Code and Civil Procedure Code volumes with a gavel, on the chamber's desk"
+              className="h-[460px] w-full object-cover object-top"
+              src="/assets/khawaja-mahmood-ayaz.jpeg"
+              alt="Khawaja Mahmood Ayaz, Senior Counsel"
             />
+            <div className="bg-white px-5 py-4">
+              <span className="block text-[10px] text-[#8c7b5a] tracking-[0.15em] uppercase">Senior Tax Counsel</span>
+              <b className="block font-serif text-[18px]">Khawaja Mahmood Ayaz</b>
+            </div>
           </div>
           <div className="absolute -right-6 -bottom-6 bg-ink text-white px-5 py-4 shadow-seal flex items-center gap-4">
             <Seal className="w-11 h-11 text-[13px]" />
