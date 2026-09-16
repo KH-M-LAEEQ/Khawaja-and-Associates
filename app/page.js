@@ -113,7 +113,7 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Incharge, Tax Lawyers Wing — Lahore High Court Bar Association</p>
-                  <span className="reg-year">—</span>
+                  <span className="reg-year">1997–2000</span>
                 </div>
                 <div className="reg-row">
                   <p>Member, Lahore Tax Advisors Club</p>
