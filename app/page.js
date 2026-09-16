@@ -165,9 +165,9 @@ export default function HomePage() {
         </h2>
 
         <div className="flex flex-wrap gap-6 items-stretch">
-          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[560px]">
+          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
             <img
-              className="w-full h-[220px] object-cover object-top"
+              className="w-full h-[323px] object-cover object-top"
               src="/assets/khawaja-muhammad-asghar.jpg"
               alt="Khawaja Muhammad Asghar"
             />
