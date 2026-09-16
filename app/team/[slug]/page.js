@@ -52,21 +52,29 @@ export default async function TeamMemberPage({ params }) {
           </div>
 
           <div>
-            <h2 className="font-serif text-[26px] mb-6">
-              {member.credentials ? "Credentials" : "Profile"}
-            </h2>
-            {member.credentials ? (
-              <div>
-                {member.credentials.map((c) => (
-                  <div key={c.text} className="reg-row">
-                    <p>{c.text}</p>
-                    {c.year ? <span className="reg-year">{c.year}</span> : null}
-                  </div>
+            {member.bio ? (
+              <>
+                <h2 className="font-serif text-[26px] mb-6">Profile</h2>
+                {member.bio.map((paragraph) => (
+                  <p key={paragraph} className="text-[#68717a] text-[14px] leading-[1.7] mb-4 max-w-[640px]">
+                    {paragraph}
+                  </p>
                 ))}
-              </div>
-            ) : (
-              <p className="text-[#68717a] text-[14px] leading-[1.7] mb-4 max-w-[640px]">{member.bio}</p>
-            )}
+              </>
+            ) : null}
+            {member.credentials ? (
+              <>
+                <h2 className={`font-serif text-[26px] mb-6 ${member.bio ? "mt-10" : ""}`}>Credentials</h2>
+                <div>
+                  {member.credentials.map((c) => (
+                    <div key={c.text} className="reg-row">
+                      <p>{c.text}</p>
+                      {c.year ? <span className="reg-year">{c.year}</span> : null}
+                    </div>
+                  ))}
+                </div>
+              </>
+            ) : null}
           </div>
         </div>
       </section>
