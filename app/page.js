@@ -134,7 +134,7 @@ export default function HomePage() {
                 <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ali</h3>
               </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
-                Advocate &amp; Partner • Tax &amp; Corporate Practice
+                Advocate • Tax &amp; Corporate Practice
               </p>
               <p className="text-body-m text-graphite m-0">
                 Khawaja Muhammad Ali is a senior legal practitioner specializing in corporate, taxation and
