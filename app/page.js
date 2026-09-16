@@ -145,13 +145,12 @@ export default function HomePage() {
             <div className="eyebrow mb-2">COUNSEL</div>
             <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
             <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
-              Associate • Tax Practice
+              Associate Counsel • Tax Practice
             </p>
             <p className="text-body-m text-graphite m-0">
-              Khawaja Muhammad Ibrahim has completed structured practical training with Khawaja Mahmood
-              Ayaz and with Rana Sikandar Hayat, gaining direct exposure to tax advisory, compliance and
-              litigation practice. He continues to build on this foundation within the chamber, supporting
-              matters across income tax, sales tax and FBR proceedings.
+              Khawaja Muhammad Ibrahim trained directly under Khawaja Mahmood Ayaz and under Rana Sikandar
+              Hayat, building a strong practical grounding in tax advisory, FBR proceedings and litigation
+              support. He now works across income tax, sales tax and regulatory matters at the chamber.
             </p>
           </div>
         </article>
