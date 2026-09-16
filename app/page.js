@@ -97,7 +97,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Executive Member, Punjab Bar Council</p>
-                  <span className="reg-year">—</span>
                 </div>
                 <div className="reg-row">
                   <p>Member, Executive Committee, Lahore Tax Bar Association</p>
@@ -109,7 +108,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Life Member, Lahore High Court Bar Association</p>
-                  <span className="reg-year">—</span>
                 </div>
                 <div className="reg-row">
                   <p>Incharge, Tax Lawyers Wing — Lahore High Court Bar Association</p>
@@ -117,7 +115,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Member, Lahore Tax Advisors Club</p>
-                  <span className="reg-year">—</span>
                 </div>
               </div>
             </div>
@@ -190,7 +187,6 @@ export default function HomePage() {
               <div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Former General Secretary, Lahore Tax Bar Association</p>
-                  <span className="reg-year">—</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Member — Lahore High Court Bar Association</p>
@@ -198,7 +194,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Executive Member, Punjab Bar Council</p>
-                  <span className="reg-year">—</span>
                 </div>
               </div>
             </div>
@@ -227,7 +222,6 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Senior Member, Pakistan Supreme Court Bar Council</p>
-                  <span className="reg-year">—</span>
                 </div>
               </div>
             </div>
