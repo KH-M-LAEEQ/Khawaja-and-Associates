@@ -49,15 +49,16 @@ export default async function PracticeAreaPage({ params }) {
           </div>
           <div>
             <h2 className="font-serif text-[26px] mb-6">How we can help</h2>
-            <p className="text-[#68717a] text-[14px] mb-4">
-              Our approach combines technical knowledge of Pakistan&apos;s tax framework with direct, practical
-              representation. We work closely with clients to understand the commercial context behind each
-              matter and to identify the most defensible and efficient path forward.
-            </p>
-            <p className="text-[#68717a] text-[14px] mb-4">
-              Whether you are facing a routine compliance requirement or a complex dispute, the chamber is
-              available to advise, represent and guide you through the relevant process.
-            </p>
+            {(
+              area.howWeCanHelp || [
+                "Our approach combines technical knowledge of Pakistan's tax framework with direct, practical representation. We work closely with clients to understand the commercial context behind each matter and to identify the most defensible and efficient path forward.",
+                "Whether you are facing a routine compliance requirement or a complex dispute, the chamber is available to advise, represent and guide you through the relevant process.",
+              ]
+            ).map((paragraph) => (
+              <p key={paragraph} className="text-[#68717a] text-[14px] mb-4">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       </section>
