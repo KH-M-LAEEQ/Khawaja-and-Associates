@@ -134,12 +134,13 @@ export default function HomePage() {
           </article>
         </div>
 
-        {/* Secondary: Khawaja Muhammad Ibrahim — photo + bio pending — own row below */}
+        {/* Secondary: Khawaja Muhammad Ibrahim — real photo, bio pending — own row below */}
         <article className="bg-white border border-line max-w-[400px]">
-          <div className="pending h-[280px] flex items-center justify-center">
-            <span className="pending-tag">Photo pending</span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-graphite">Portrait</span>
-          </div>
+          <img
+            className="w-full h-[280px] object-cover object-top"
+            src="/assets/khawaja-muhammad-ibrahim.jpg"
+            alt="Khawaja Muhammad Ibrahim"
+          />
           <div className="p-8">
             <div className="eyebrow mb-2">COUNSEL</div>
             <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
