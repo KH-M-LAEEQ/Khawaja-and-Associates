@@ -199,10 +199,11 @@ export default function HomePage() {
           </article>
 
           <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[560px]">
-            <div className="pending h-[220px] flex items-center justify-center !bg-[#1c2530] !border-brass/30">
-              <span className="pending-tag !bg-[#1c2530]">Photo pending</span>
-              <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[#aeb5bc]">Portrait</span>
-            </div>
+            <img
+              className="w-full h-[220px] object-cover object-top"
+              src="/assets/khawaja-saeed-uz-zafar.jpg"
+              alt="Khawaja Saeed uz Zafar"
+            />
             <div className="p-8">
               <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
               <h3 className="font-serif text-[26px] my-1">Khawaja Saeed uz Zafar</h3>
