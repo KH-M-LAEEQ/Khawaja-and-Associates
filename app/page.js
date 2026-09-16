@@ -233,7 +233,7 @@ export default function HomePage() {
                 <h3 className="font-serif text-[26px] my-1">Khawaja Saeed uz Zafar</h3>
               </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
-                Senior Advocate • Supreme Court of Pakistan
+                Advocate Supreme Court • Former Deputy Attorney-General for Pakistan
               </p>
               <div>
                 <div className="reg-row !border-[#3b444c]">
