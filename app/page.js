@@ -187,7 +187,7 @@ export default function HomePage() {
                   <span className="reg-year">1964</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
-                  <p className="!text-[#d3d8dc]">Member, Punjab Bar Council</p>
+                  <p className="!text-[#d3d8dc]">Executive Member, Punjab Bar Council</p>
                   <span className="reg-year">—</span>
                 </div>
               </div>
@@ -212,6 +212,10 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Deputy Attorney General of Pakistan</p>
+                  <span className="reg-year">—</span>
+                </div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">Senior Member, Pakistan Supreme Court Bar Council</p>
                   <span className="reg-year">—</span>
                 </div>
               </div>
