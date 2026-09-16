@@ -111,7 +111,7 @@ export default function HomePage() {
             </div>
           </article>
 
-          {/* Secondary: Khawaja Muhammad Ali — real name/photo, bio pending */}
+          {/* Secondary: Khawaja Muhammad Ali */}
           <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[400px]">
             <img
               className="w-full h-[333px] object-cover object-top"
@@ -124,12 +124,16 @@ export default function HomePage() {
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
                 Advocate • Tax Practitioner
               </p>
-              <div className="pending p-4">
-                <span className="pending-tag">Bio pending</span>
-                <p className="text-body-m text-graphite m-0 pr-20">
-                  Short professional biography, areas of practice and relevant experience.
-                </p>
-              </div>
+              <p className="text-body-m text-graphite m-0">
+                Khawaja Muhammad Ali, son of Khawaja Muhammad Asghar, carries the chamber&apos;s practice into
+                its third generation, building on the corporate and taxation practice founded by his
+                grandfather and expanded by his father. He has managed complex financial disputes, tax
+                rectifications and administrative representations before the Regional Tax Office (RTO)
+                Lahore and FBR tribunals, and advises SMEs and commercial families across Lahore on
+                corporate compliance, legal structuring and partnership matters. He maintains an active
+                role within the Lahore Tax Bar Association (LTBA), continuing the family&apos;s longstanding
+                presence in the city&apos;s tax bar.
+              </p>
             </div>
           </article>
         </div>
