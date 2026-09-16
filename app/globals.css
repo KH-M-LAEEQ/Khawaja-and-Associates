@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-stone text-ink font-sans;
+    @apply bg-stone text-ink font-sans overflow-x-hidden;
   }
   a:focus-visible,
   button:focus-visible,
@@ -90,6 +99,32 @@
   }
   .insight-meta {
     @apply font-mono text-[10px] tracking-[0.1em] text-brass mt-5 mx-6;
+  }
+
+  /* Practice-area ticker — continuously scrolling strip */
+  .marquee {
+    @apply overflow-hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 170s linear infinite;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  .marquee-item {
+    @apply font-mono text-[9px] tracking-[0.18em] text-[#717982] whitespace-nowrap inline-flex items-center gap-8 pr-8;
+  }
+  .marquee-dot {
+    @apply text-brass;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
   }
 
   /* Publications / book cards */

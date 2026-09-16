@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex gap-5 items-center flex-wrap">
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/">About</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/practice">Practice</Link>
-        <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#professionals">Team</Link>
+        <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/team">Team</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#insights">Insights</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#location">Location</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#contact">Contact</Link>

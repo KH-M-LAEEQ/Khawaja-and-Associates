@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const ICON = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -23,5 +24,14 @@ export function ImageFallback({ label, sub }) {
 export default function InsightImage({ src, alt, title }) {
   const [failed, setFailed] = useState(false);
   if (failed) return <ImageFallback label="Image unavailable" sub={title} />;
-  return <img src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} />;
+  return (
+    <Image
+      fill
+      sizes="(min-width: 768px) 33vw, 100vw"
+      className="object-cover"
+      src={src}
+      alt={alt}
+      onError={() => setFailed(true)}
+    />
+  );
 }

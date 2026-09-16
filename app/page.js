@@ -1,13 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 import Seal from "@/components/Seal";
 import InsightsSection from "@/components/InsightsSection";
 import PublicationsSection from "@/components/PublicationsSection";
 import ContactForm from "@/components/ContactForm";
 
+const PRACTICE_AREAS_TICKER = [
+  "FEDERAL TAXATION",
+  "PROVINCIAL TAXATION",
+  "TAX LITIGATION",
+  "ADVISORY",
+  "COMPLIANCE",
+];
+
 export default function HomePage() {
   return (
     <main id="home">
-      <section className="min-h-[640px] px-[7vw] py-16 md:py-0 grid md:grid-cols-[1.08fr_.92fr] gap-12 md:gap-[8vw] items-center bg-stone">
+      <section className="md:min-h-[640px] px-[7vw] py-16 md:py-0 grid md:grid-cols-[1.08fr_.92fr] gap-12 md:gap-[8vw] items-center bg-stone">
         <div>
           <div className="eyebrow">ESTABLISHED TAX LAW PRACTICE • LAHORE</div>
           <h1 className="font-serif font-medium text-display-xl my-5 text-ink">
@@ -33,11 +42,16 @@ export default function HomePage() {
         </div>
         <div className="relative max-w-[470px] mx-auto w-full hidden md:block">
           <div className="bg-[#d5d0c5] p-4 border border-[#b8763f] shadow-lift">
-            <img
-              className="h-[460px] w-full object-cover object-center"
-              src="/assets/law-books.jpg"
-              alt="Constitution of Pakistan, Pakistan Penal Code and Civil Procedure Code volumes with a gavel, on the chamber's desk"
-            />
+            <div className="relative h-[460px] w-full">
+              <Image
+                fill
+                priority
+                sizes="(min-width: 768px) 440px, 100vw"
+                className="object-cover object-center"
+                src="/assets/law-books.jpg"
+                alt="Constitution of Pakistan, Pakistan Penal Code and Civil Procedure Code volumes with a gavel, on the chamber's desk"
+              />
+            </div>
           </div>
           <div className="absolute -right-6 -bottom-6 bg-ink text-white px-5 py-4 shadow-seal flex items-center gap-4">
             <Seal className="w-11 h-11 text-[13px]" />
@@ -50,12 +64,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white border-y border-line flex justify-around py-5 px-[5vw] gap-5 flex-wrap">
-        {["FEDERAL TAXATION", "PROVINCIAL TAXATION", "TAX LITIGATION", "ADVISORY", "COMPLIANCE"].map((t) => (
-          <span key={t} className="font-mono text-[9px] tracking-[0.18em] text-[#717982]">
-            {t}
-          </span>
-        ))}
+      <section className="bg-white border-y border-line py-5 marquee">
+        <div className="marquee-track">
+          {Array.from({ length: 12 }, () => PRACTICE_AREAS_TICKER).flat().map((t, i) => (
+            <span key={i} className="marquee-item">
+              {t}
+              <span className="marquee-dot" aria-hidden="true">•</span>
+            </span>
+          ))}
+        </div>
       </section>
 
       <section className="py-24 md:py-28 px-[7vw]" id="professionals">
@@ -67,13 +84,17 @@ export default function HomePage() {
         <div className="grid gap-6">
         <div className="flex flex-wrap gap-6 items-stretch">
           {/* Featured: Khawaja Mahmood Ayaz — real credentials, register treatment */}
-          <article className="flex flex-col md:flex-row bg-white border border-line flex-[1.6_1_560px]">
+          <article className="flex flex-col md:flex-row bg-white border border-line w-full md:flex-[1.6_1_560px]">
             <Link href="/team/khawaja-mahmood-ayaz" className="contents">
-              <img
-                className="w-full md:w-[300px] h-[280px] md:h-auto object-cover object-top shrink-0"
-                src="/assets/khawaja-mahmood-ayaz.jpeg"
-                alt="Khawaja Mahmood Ayaz"
-              />
+              <div className="relative w-full md:w-[300px] aspect-[4/5] md:aspect-[1184/2096] shrink-0">
+                <Image
+                  fill
+                  sizes="(min-width: 768px) 300px, 100vw"
+                  className="object-cover object-top"
+                  src="/assets/khawaja-mahmood-ayaz.jpeg"
+                  alt="Khawaja Mahmood Ayaz"
+                />
+              </div>
             </Link>
             <div className="p-8 flex-1 flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-2">
@@ -116,10 +137,12 @@ export default function HomePage() {
           </article>
 
           {/* Secondary: Khawaja Muhammad Ali */}
-          <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[400px]">
-            <Link href="/team/khawaja-muhammad-ali" className="block">
-              <img
-                className="w-full h-[333px] object-cover object-top"
+          <article className="bg-white border border-line w-full max-w-[400px] sm:flex-[1.1_1_300px]">
+            <Link href="/team/khawaja-muhammad-ali" className="relative block w-full h-[338px]">
+              <Image
+                fill
+                sizes="(min-width: 640px) 400px, 100vw"
+                className="object-cover object-top"
                 src="/assets/khawaja-muhammad-ali.jpg"
                 alt="Khawaja Muhammad Ali"
               />
@@ -145,9 +168,11 @@ export default function HomePage() {
 
         {/* Secondary: Khawaja Muhammad Ibrahim — own row below */}
         <article className="bg-white border border-line max-w-[400px]">
-          <Link href="/team/khawaja-muhammad-ibrahim" className="block">
-            <img
-              className="w-full h-[333px] object-cover object-top"
+          <Link href="/team/khawaja-muhammad-ibrahim" className="relative block w-full h-[338px]">
+            <Image
+              fill
+              sizes="(min-width: 640px) 400px, 100vw"
+              className="object-cover object-top"
               src="/assets/khawaja-muhammad-ibrahim.jpg"
               alt="Khawaja Muhammad Ibrahim"
             />
@@ -177,10 +202,12 @@ export default function HomePage() {
         </h2>
 
         <div className="flex flex-wrap gap-6 items-stretch">
-          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
-            <Link href="/team/khawaja-muhammad-asghar" className="block">
-              <img
-                className="w-full h-[323px] object-cover object-top"
+          <article className="bg-[#182129] border border-[#3b444c] w-full max-w-[400px] sm:flex-1 sm:min-w-[300px]">
+            <Link href="/team/khawaja-muhammad-asghar" className="relative block w-full aspect-[4/5]">
+              <Image
+                fill
+                sizes="(min-width: 640px) 400px, 100vw"
+                className="object-cover object-top"
                 src="/assets/khawaja-muhammad-asghar.jpg"
                 alt="Khawaja Muhammad Asghar"
               />
@@ -215,10 +242,12 @@ export default function HomePage() {
             </div>
           </article>
 
-          <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
-            <Link href="/team/khawaja-saeed-uz-zafar" className="block">
-              <img
-                className="w-full h-[323px] object-cover object-top"
+          <article className="bg-[#182129] border border-[#3b444c] w-full max-w-[400px] sm:flex-1 sm:min-w-[300px]">
+            <Link href="/team/khawaja-saeed-uz-zafar" className="relative block w-full aspect-[4/5]">
+              <Image
+                fill
+                sizes="(min-width: 640px) 400px, 100vw"
+                className="object-cover object-top"
                 src="/assets/khawaja-saeed-uz-zafar.jpg"
                 alt="Khawaja Saeed uz Zafar"
               />
@@ -297,8 +326,11 @@ export default function HomePage() {
                 <small className="block text-[10px] text-[#858b90]">Office landline</small>
               </div>
               <div>
-                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">FAX</span>
-                <b className="block font-serif text-[18px]">042-36375620</b>
+                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">MOBILE</span>
+                <b className="block font-serif text-[18px]">
+                  <a className="block hover:text-brass" href="tel:+923219441019">+92 321-9441019</a>
+                  <a className="block hover:text-brass" href="tel:+923236300905">+92 323-6300905</a>
+                </b>
               </div>
               <div>
                 <span className="block text-[9px] tracking-[0.18em] text-[#927647]">EMAIL</span>

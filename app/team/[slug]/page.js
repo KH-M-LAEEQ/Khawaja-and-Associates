@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { teamMembers, getTeamMember } from "@/lib/team";
 import Seal from "@/components/Seal";
@@ -25,7 +26,7 @@ export default async function TeamMemberPage({ params }) {
   return (
     <main>
       <section className="pt-16 md:pt-20 px-[7vw] pb-0">
-        <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/#professionals">
+        <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/team">
           ← Back to team
         </Link>
         <div className="eyebrow mt-6">{member.role}</div>
@@ -36,9 +37,12 @@ export default async function TeamMemberPage({ params }) {
       <section className="pt-14 pb-24 px-[7vw]">
         <div className="grid md:grid-cols-[340px_1fr] gap-10 md:gap-[8vw]">
           <div>
-            <div className="border border-line shadow-lift overflow-hidden">
-              <img
-                className="w-full h-[420px] object-cover object-top"
+            <div className="relative w-full aspect-[4/5] border border-line shadow-lift overflow-hidden">
+              <Image
+                fill
+                priority
+                sizes="(min-width: 768px) 340px, 100vw"
+                className="object-cover object-top"
                 src={member.photo}
                 alt={member.name}
               />
