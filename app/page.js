@@ -196,6 +196,12 @@ export default function HomePage() {
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Executive Member, Punjab Bar Council</p>
                 </div>
+                <div className="reg-row !border-[#3b444c]">
+                  <p className="!text-[#d3d8dc]">
+                    Senior Member, FBR Liaison &amp; Coordination Committee — represented Lahore&apos;s tax
+                    practitioners before regional tax commissioners
+                  </p>
+                </div>
               </div>
             </div>
           </article>
