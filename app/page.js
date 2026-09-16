@@ -72,9 +72,9 @@ export default function HomePage() {
         <div className="flex flex-wrap gap-6 items-stretch">
           {/* Featured: Khawaja Mahmood Ayaz — real credentials, register treatment */}
           <article className="flex flex-col md:flex-row bg-white border border-line flex-[1.6_1_560px]">
-            <Link href="/team/khawaja-mahmood-ayaz" className="block shrink-0 md:w-[300px] self-stretch">
+            <Link href="/team/khawaja-mahmood-ayaz" className="contents">
               <img
-                className="w-full md:w-[300px] h-[280px] md:h-full object-cover object-top shrink-0"
+                className="w-full md:w-[300px] h-[280px] md:h-auto object-cover object-top shrink-0"
                 src="/assets/khawaja-mahmood-ayaz.jpeg"
                 alt="Khawaja Mahmood Ayaz"
               />
