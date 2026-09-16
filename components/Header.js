@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="nav h-[84px] px-[5vw] flex items-center justify-between bg-parchment/95 border-b border-line sticky top-0 z-10">
       <Link className="flex items-center text-ink no-underline" href="/">
-        <span className="flex items-baseline gap-3">
+        <span className="flex items-baseline gap-1.5">
           <b className="font-serif font-semibold text-[20px] tracking-[0.04em] leading-tight">KHAWAJA</b>
           <b className="font-serif font-semibold text-[20px] tracking-[0.04em] leading-tight">AND ASSOCIATES</b>
         </span>
