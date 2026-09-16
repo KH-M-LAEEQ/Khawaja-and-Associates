@@ -134,7 +134,7 @@ export default function HomePage() {
           </article>
         </div>
 
-        {/* Secondary: Khawaja Muhammad Ibrahim — real photo, bio pending — own row below */}
+        {/* Secondary: Khawaja Muhammad Ibrahim — own row below */}
         <article className="bg-white border border-line max-w-[400px]">
           <img
             className="w-full h-[333px] object-cover object-top"
@@ -145,14 +145,14 @@ export default function HomePage() {
             <div className="eyebrow mb-2">COUNSEL</div>
             <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
             <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
-              Advocate • Tax Practitioner
+              Associate • Tax Practice
             </p>
-            <div className="pending p-4">
-              <span className="pending-tag">Bio pending</span>
-              <p className="text-body-m text-graphite m-0 pr-20">
-                Short professional biography, areas of practice and relevant experience.
-              </p>
-            </div>
+            <p className="text-body-m text-graphite m-0">
+              Khawaja Muhammad Ibrahim has completed structured practical training with Khawaja Mahmood
+              Ayaz and with Rana Sikandar Hayat, gaining direct exposure to tax advisory, compliance and
+              litigation practice. He continues to build on this foundation within the chamber, supporting
+              matters across income tax, sales tax and FBR proceedings.
+            </p>
           </div>
         </article>
         </div>
