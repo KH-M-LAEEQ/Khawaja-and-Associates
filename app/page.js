@@ -120,7 +120,7 @@ export default function HomePage() {
           </article>
 
           {/* Secondary: Khawaja Muhammad Ali — real name/photo, bio pending */}
-          <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[560px]">
+          <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[400px]">
             <img
               className="w-full h-[333px] object-cover object-top"
               src="/assets/khawaja-muhammad-ali.jpg"
@@ -215,11 +215,11 @@ export default function HomePage() {
               <div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Additional Attorney General of Pakistan</p>
-                  <span className="reg-year">—</span>
+                  <span className="reg-year">2014</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Deputy Attorney General of Pakistan</p>
-                  <span className="reg-year">—</span>
+                  <span className="reg-year">1996–2002</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Senior Member, Pakistan Supreme Court Bar Council</p>
