@@ -137,7 +137,7 @@ export default function HomePage() {
         {/* Secondary: Khawaja Muhammad Ibrahim — real photo, bio pending — own row below */}
         <article className="bg-white border border-line max-w-[400px]">
           <img
-            className="w-full h-[280px] object-cover object-top"
+            className="w-full h-[333px] object-cover object-top"
             src="/assets/khawaja-muhammad-ibrahim.jpg"
             alt="Khawaja Muhammad Ibrahim"
           />
