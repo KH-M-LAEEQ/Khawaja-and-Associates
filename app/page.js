@@ -119,7 +119,7 @@ export default function HomePage() {
           </article>
 
           {/* Secondary: Khawaja Muhammad Ali — real name/photo, bio pending */}
-          <article className="bg-white border border-line flex-1 min-w-[300px] max-w-[400px]">
+          <article className="bg-white border border-line flex-1 min-w-[300px] max-w-[480px]">
             <img
               className="w-full h-[333px] object-cover object-top"
               src="/assets/khawaja-muhammad-ali.jpg"
