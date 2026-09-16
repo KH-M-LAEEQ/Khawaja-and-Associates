@@ -69,7 +69,7 @@ export default function HomePage() {
         </h2>
 
         <div className="grid gap-6">
-        <div className="flex flex-wrap gap-6 items-start">
+        <div className="flex flex-wrap gap-6 items-stretch">
           {/* Featured: Khawaja Mahmood Ayaz — real credentials, register treatment */}
           <article className="flex flex-col md:flex-row bg-white border border-line flex-[1.6_1_560px]">
             <Link href="/team/khawaja-mahmood-ayaz" className="contents">
@@ -79,7 +79,7 @@ export default function HomePage() {
                 alt="Khawaja Mahmood Ayaz"
               />
             </Link>
-            <div className="p-8 flex-1">
+            <div className="p-8 flex-1 flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-2">
                 <span className="eyebrow">SENIOR COUNSEL</span>
               </div>
