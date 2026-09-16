@@ -83,7 +83,6 @@ export default function HomePage() {
             />
             <div className="p-8 flex-1">
               <div className="flex items-center gap-3 mb-2">
-                <Seal className="w-9 h-9 text-[11px]" />
                 <span className="eyebrow">SENIOR COUNSEL</span>
               </div>
               <h3 className="font-serif text-[30px] my-1">Khawaja Mahmood Ayaz</h3>
