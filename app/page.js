@@ -58,15 +58,6 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className="bg-[#e7e2d7] py-24 px-[12vw] text-center">
-        <div className="font-serif text-brass text-[80px] h-[56px]">&ldquo;</div>
-        <blockquote className="font-serif font-medium text-[clamp(27px,3.5vw,48px)] leading-[1.25] max-w-[1000px] mx-auto mt-4 mb-6">
-          Good tax counsel is not simply about knowing the law. It is about understanding the client&apos;s
-          position and finding the most defensible path forward.
-        </blockquote>
-        <span className="font-mono text-[10px] tracking-[0.18em] text-[#776d60]">— CHAMBER PHILOSOPHY</span>
-      </section>
-
       <section className="py-24 md:py-28 px-[7vw]" id="professionals">
         <div className="eyebrow">OUR TEAM</div>
         <h2 className="font-serif font-medium text-display-l mt-3 mb-10">
@@ -234,6 +225,15 @@ export default function HomePage() {
             </div>
           </article>
         </div>
+      </section>
+
+      <section className="bg-[#e7e2d7] py-24 px-[12vw] text-center">
+        <div className="font-serif text-brass text-[80px] h-[56px]">&ldquo;</div>
+        <blockquote className="font-serif font-medium text-[clamp(27px,3.5vw,48px)] leading-[1.25] max-w-[1000px] mx-auto mt-4 mb-6">
+          Good tax counsel is not simply about knowing the law. It is about understanding the client&apos;s
+          position and finding the most defensible path forward.
+        </blockquote>
+        <span className="font-mono text-[10px] tracking-[0.18em] text-[#776d60]">— CHAMBER PHILOSOPHY</span>
       </section>
 
       <PublicationsSection />
