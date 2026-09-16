@@ -101,7 +101,7 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row">
                   <p>Youngest-ever General Secretary, Lahore Tax Bar Association</p>
-                  <span className="reg-year">—</span>
+                  <span className="reg-year">2011</span>
                 </div>
                 <div className="reg-row">
                   <p>Life Member, Lahore High Court Bar Association</p>
