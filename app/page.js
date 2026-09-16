@@ -125,16 +125,11 @@ export default function HomePage() {
                 Advocate &amp; Partner • Tax &amp; Corporate Practice
               </p>
               <p className="text-body-m text-graphite m-0">
-                Khawaja Muhammad Ali is a senior figure at the chamber and the third generation to lead
-                its corporate and taxation practice — son of Khawaja Muhammad Asghar, and successor to a
-                legacy his grandfather founded and his father expanded. Over the course of his career he
-                has built a formidable record resolving complex financial disputes, securing tax
-                rectifications, and representing clients in high-stakes proceedings before the Regional
-                Tax Office (RTO) Lahore and FBR tribunals. His corporate advisory practice is trusted by
-                leading SMEs and commercial families across Lahore on matters of corporate compliance,
-                legal structuring and partnership validation. A longstanding and respected presence within
-                the Lahore Tax Bar Association (LTBA), he carries forward his family&apos;s deep influence in
-                the city&apos;s tax bar.
+                Khawaja Muhammad Ali is a senior legal practitioner specializing in corporate, taxation and
+                commercial law. With extensive experience in complex tax matters, financial disputes and
+                corporate advisory, he represents and advises clients before tax authorities and
+                regulatory forums, including the FBR and RTO Lahore. His practice is built on deep legal
+                expertise, strategic counsel and effective client representation.
               </p>
             </div>
           </article>
