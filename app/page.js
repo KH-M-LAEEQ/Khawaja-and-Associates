@@ -122,17 +122,19 @@ export default function HomePage() {
               <div className="eyebrow mb-2">COUNSEL</div>
               <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ali</h3>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
-                Advocate • Tax Practitioner
+                Advocate &amp; Partner • Tax &amp; Corporate Practice
               </p>
               <p className="text-body-m text-graphite m-0">
-                Khawaja Muhammad Ali, son of Khawaja Muhammad Asghar, carries the chamber&apos;s practice into
-                its third generation, building on the corporate and taxation practice founded by his
-                grandfather and expanded by his father. He has managed complex financial disputes, tax
-                rectifications and administrative representations before the Regional Tax Office (RTO)
-                Lahore and FBR tribunals, and advises SMEs and commercial families across Lahore on
-                corporate compliance, legal structuring and partnership matters. He maintains an active
-                role within the Lahore Tax Bar Association (LTBA), continuing the family&apos;s longstanding
-                presence in the city&apos;s tax bar.
+                Khawaja Muhammad Ali is a senior figure at the chamber and the third generation to lead
+                its corporate and taxation practice — son of Khawaja Muhammad Asghar, and successor to a
+                legacy his grandfather founded and his father expanded. Over the course of his career he
+                has built a formidable record resolving complex financial disputes, securing tax
+                rectifications, and representing clients in high-stakes proceedings before the Regional
+                Tax Office (RTO) Lahore and FBR tribunals. His corporate advisory practice is trusted by
+                leading SMEs and commercial families across Lahore on matters of corporate compliance,
+                legal structuring and partnership validation. A longstanding and respected presence within
+                the Lahore Tax Bar Association (LTBA), he carries forward his family&apos;s deep influence in
+                the city&apos;s tax bar.
               </p>
             </div>
           </article>
