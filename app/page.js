@@ -68,16 +68,20 @@ export default function HomePage() {
         <div className="flex flex-wrap gap-6 items-stretch">
           {/* Featured: Khawaja Mahmood Ayaz — real credentials, register treatment */}
           <article className="flex flex-col md:flex-row bg-white border border-line flex-[1.6_1_560px]">
-            <img
-              className="w-full md:w-[300px] h-[280px] md:h-auto object-cover object-top shrink-0"
-              src="/assets/khawaja-mahmood-ayaz.jpeg"
-              alt="Khawaja Mahmood Ayaz"
-            />
+            <Link href="/team/khawaja-mahmood-ayaz" className="block shrink-0 md:w-[300px]">
+              <img
+                className="w-full md:w-[300px] h-[280px] md:h-auto object-cover object-top shrink-0"
+                src="/assets/khawaja-mahmood-ayaz.jpeg"
+                alt="Khawaja Mahmood Ayaz"
+              />
+            </Link>
             <div className="p-8 flex-1">
               <div className="flex items-center gap-3 mb-2">
                 <span className="eyebrow">SENIOR COUNSEL</span>
               </div>
-              <h3 className="font-serif text-[30px] my-1">Khawaja Mahmood Ayaz</h3>
+              <Link href="/team/khawaja-mahmood-ayaz" className="no-underline text-ink hover:text-brass transition-colors">
+                <h3 className="font-serif text-[30px] my-1">Khawaja Mahmood Ayaz</h3>
+              </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-5">
                 Advocate • Tax Practitioner
               </p>
@@ -113,14 +117,18 @@ export default function HomePage() {
 
           {/* Secondary: Khawaja Muhammad Ali */}
           <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[400px]">
-            <img
-              className="w-full h-[333px] object-cover object-top"
-              src="/assets/khawaja-muhammad-ali.jpg"
-              alt="Khawaja Muhammad Ali"
-            />
+            <Link href="/team/khawaja-muhammad-ali" className="block">
+              <img
+                className="w-full h-[333px] object-cover object-top"
+                src="/assets/khawaja-muhammad-ali.jpg"
+                alt="Khawaja Muhammad Ali"
+              />
+            </Link>
             <div className="p-8">
               <div className="eyebrow mb-2">COUNSEL</div>
-              <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ali</h3>
+              <Link href="/team/khawaja-muhammad-ali" className="no-underline text-ink hover:text-brass transition-colors">
+                <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ali</h3>
+              </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
                 Advocate &amp; Partner • Tax &amp; Corporate Practice
               </p>
@@ -137,14 +145,18 @@ export default function HomePage() {
 
         {/* Secondary: Khawaja Muhammad Ibrahim — own row below */}
         <article className="bg-white border border-line max-w-[400px]">
-          <img
-            className="w-full h-[333px] object-cover object-top"
-            src="/assets/khawaja-muhammad-ibrahim.jpg"
-            alt="Khawaja Muhammad Ibrahim"
-          />
+          <Link href="/team/khawaja-muhammad-ibrahim" className="block">
+            <img
+              className="w-full h-[333px] object-cover object-top"
+              src="/assets/khawaja-muhammad-ibrahim.jpg"
+              alt="Khawaja Muhammad Ibrahim"
+            />
+          </Link>
           <div className="p-8">
             <div className="eyebrow mb-2">COUNSEL</div>
-            <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
+            <Link href="/team/khawaja-muhammad-ibrahim" className="no-underline text-ink hover:text-brass transition-colors">
+              <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
+            </Link>
             <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
               Associate Counsel • Tax Practice
             </p>
@@ -166,14 +178,18 @@ export default function HomePage() {
 
         <div className="flex flex-wrap gap-6 items-stretch">
           <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
-            <img
-              className="w-full h-[323px] object-cover object-top"
-              src="/assets/khawaja-muhammad-asghar.jpg"
-              alt="Khawaja Muhammad Asghar"
-            />
+            <Link href="/team/khawaja-muhammad-asghar" className="block">
+              <img
+                className="w-full h-[323px] object-cover object-top"
+                src="/assets/khawaja-muhammad-asghar.jpg"
+                alt="Khawaja Muhammad Asghar"
+              />
+            </Link>
             <div className="p-8">
               <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
-              <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Asghar</h3>
+              <Link href="/team/khawaja-muhammad-asghar" className="no-underline hover:text-brass transition-colors">
+                <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Asghar</h3>
+              </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
                 Senior Consultant • Tax Practitioner • Advocate High Court
               </p>
@@ -200,14 +216,18 @@ export default function HomePage() {
           </article>
 
           <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
-            <img
-              className="w-full h-[323px] object-cover object-top"
-              src="/assets/khawaja-saeed-uz-zafar.jpg"
-              alt="Khawaja Saeed uz Zafar"
-            />
+            <Link href="/team/khawaja-saeed-uz-zafar" className="block">
+              <img
+                className="w-full h-[323px] object-cover object-top"
+                src="/assets/khawaja-saeed-uz-zafar.jpg"
+                alt="Khawaja Saeed uz Zafar"
+              />
+            </Link>
             <div className="p-8">
               <div className="eyebrow !text-brass mb-2">FORMER MEMBER</div>
-              <h3 className="font-serif text-[26px] my-1">Khawaja Saeed uz Zafar</h3>
+              <Link href="/team/khawaja-saeed-uz-zafar" className="no-underline hover:text-brass transition-colors">
+                <h3 className="font-serif text-[26px] my-1">Khawaja Saeed uz Zafar</h3>
+              </Link>
               <p className="text-[11px] tracking-[0.1em] uppercase text-[#c9a15c] mb-5">
                 Senior Advocate • Supreme Court of Pakistan
               </p>
