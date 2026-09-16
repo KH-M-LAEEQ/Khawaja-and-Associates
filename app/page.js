@@ -200,7 +200,7 @@ export default function HomePage() {
 
           <article className="bg-[#182129] border border-[#3b444c] flex-1 min-w-[300px] max-w-[400px]">
             <img
-              className="w-full h-[240px] object-cover object-top"
+              className="w-full h-[280px] object-cover object-top"
               src="/assets/khawaja-saeed-uz-zafar.jpg"
               alt="Khawaja Saeed uz Zafar"
             />
