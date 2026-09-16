@@ -33,7 +33,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${newsreader.variable} ${dmSans.variable} ${ibmPlexMono.variable}`}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${newsreader.variable} ${dmSans.variable} ${ibmPlexMono.variable}`}
+    >
       <body>
         <Header />
         {children}
