@@ -187,6 +187,7 @@ export default function HomePage() {
               <div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Former General Secretary, Lahore Tax Bar Association</p>
+                  <span className="reg-year">1987</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Member — Lahore High Court Bar Association</p>
