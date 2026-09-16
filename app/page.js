@@ -219,7 +219,7 @@ export default function HomePage() {
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Deputy Attorney General of Pakistan</p>
-                  <span className="reg-year">1996–2002</span>
+                  <span className="reg-year">2002</span>
                 </div>
                 <div className="reg-row !border-[#3b444c]">
                   <p className="!text-[#d3d8dc]">Senior Member, Pakistan Supreme Court Bar Council</p>
