@@ -73,6 +73,7 @@ export default function HomePage() {
           People behind the <em className="italic text-brass">practice.</em>
         </h2>
 
+        <div className="grid gap-6">
         <div className="flex flex-wrap gap-6 items-stretch">
           {/* Featured: Khawaja Mahmood Ayaz — real credentials, register treatment */}
           <article className="flex flex-col md:flex-row bg-white border border-line flex-[1.6_1_560px]">
@@ -119,7 +120,7 @@ export default function HomePage() {
           </article>
 
           {/* Secondary: Khawaja Muhammad Ali — real name/photo, bio pending */}
-          <article className="bg-white border border-line flex-1 min-w-[300px] max-w-[480px]">
+          <article className="bg-white border border-line flex-[1.1_1_300px] max-w-[560px]">
             <img
               className="w-full h-[333px] object-cover object-top"
               src="/assets/khawaja-muhammad-ali.jpg"
@@ -139,27 +140,28 @@ export default function HomePage() {
               </div>
             </div>
           </article>
+        </div>
 
-          {/* Secondary: Khawaja Muhammad Ibrahim — photo + bio pending */}
-          <article className="bg-white border border-line flex-[0_1_380px] max-w-[400px]">
-            <div className="pending h-[280px] flex items-center justify-center">
-              <span className="pending-tag">Photo pending</span>
-              <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-graphite">Portrait</span>
-            </div>
-            <div className="p-8">
-              <div className="eyebrow mb-2">COUNSEL</div>
-              <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
-              <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
-                Advocate • Tax Practitioner
+        {/* Secondary: Khawaja Muhammad Ibrahim — photo + bio pending — own row below */}
+        <article className="bg-white border border-line max-w-[400px]">
+          <div className="pending h-[280px] flex items-center justify-center">
+            <span className="pending-tag">Photo pending</span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-graphite">Portrait</span>
+          </div>
+          <div className="p-8">
+            <div className="eyebrow mb-2">COUNSEL</div>
+            <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
+            <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
+              Advocate • Tax Practitioner
+            </p>
+            <div className="pending p-4">
+              <span className="pending-tag">Bio pending</span>
+              <p className="text-body-m text-graphite m-0 pr-20">
+                Short professional biography, areas of practice and relevant experience.
               </p>
-              <div className="pending p-4">
-                <span className="pending-tag">Bio pending</span>
-                <p className="text-body-m text-graphite m-0 pr-20">
-                  Short professional biography, areas of practice and relevant experience.
-                </p>
-              </div>
             </div>
-          </article>
+          </div>
+        </article>
         </div>
       </section>
 
