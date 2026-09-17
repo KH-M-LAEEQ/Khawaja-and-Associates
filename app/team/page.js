@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { teamMembers } from "@/lib/team";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = {
-  title: "Our Team | Khawaja and Associates",
+  title: "Our Team",
   description:
     "Meet the advocates and tax practitioners of Khawaja and Associates, Lahore.",
 };
@@ -15,6 +16,7 @@ export default function TeamPage() {
   return (
     <main>
       <section className="pt-16 md:pt-20 px-[7vw] pb-16">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Our Team" }]} />
         <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/">
           ← Back to home
         </Link>
@@ -46,7 +48,7 @@ export default function TeamPage() {
                 <h3 className="font-serif text-[24px] mt-2 mb-1 group-hover:text-brass transition-colors">
                   {member.name}
                 </h3>
-                <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
+                <p className="text-[11px] tracking-[0.1em] uppercase text-[#8d7244] mb-4">
                   {member.designation}
                 </p>
                 <span className="text-ink text-[12px] font-bold border-b border-brass pb-1">

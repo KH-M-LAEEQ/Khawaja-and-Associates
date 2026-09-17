@@ -15,6 +15,7 @@ export default function Footer() {
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/">About</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/practice">Practice</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/team">Team</Link>
+        <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/publications">Publications</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#insights">Insights</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#location">Location</Link>
         <Link className="text-[#c9cdd0] no-underline text-[11px]" href="/#contact">Contact</Link>

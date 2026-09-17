@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { practiceAreas, categories } from "@/lib/practiceAreas";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = {
-  title: "Practice Areas | Khawaja and Associates",
+  title: "Practice Areas",
   description:
     "Comprehensive tax counsel for individuals, companies and organizations operating in Pakistan.",
 };
@@ -11,6 +12,7 @@ export default function PracticePage() {
   return (
     <main>
       <section className="pt-16 md:pt-20 px-[7vw] pb-16">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Practice Areas" }]} />
         <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/#home">
           ← Back to home
         </Link>

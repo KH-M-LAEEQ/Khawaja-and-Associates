@@ -103,7 +103,7 @@ export default function HomePage() {
               <Link href="/team/khawaja-mahmood-ayaz" className="no-underline text-ink hover:text-brass transition-colors">
                 <h3 className="font-serif text-[30px] my-1">Khawaja Mahmood Ayaz</h3>
               </Link>
-              <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-5">
+              <p className="text-[11px] tracking-[0.1em] uppercase text-[#8d7244] mb-5">
                 Advocate • Tax Practitioner
               </p>
               <div>
@@ -152,7 +152,7 @@ export default function HomePage() {
               <Link href="/team/khawaja-muhammad-ali" className="no-underline text-ink hover:text-brass transition-colors">
                 <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ali</h3>
               </Link>
-              <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
+              <p className="text-[11px] tracking-[0.1em] uppercase text-[#8d7244] mb-4">
                 Advocate • Tax &amp; Corporate Practice
               </p>
               <p className="text-body-m text-graphite m-0">
@@ -182,7 +182,7 @@ export default function HomePage() {
             <Link href="/team/khawaja-muhammad-ibrahim" className="no-underline text-ink hover:text-brass transition-colors">
               <h3 className="font-serif text-[26px] my-1">Khawaja Muhammad Ibrahim</h3>
             </Link>
-            <p className="text-[11px] tracking-[0.1em] uppercase text-[#927647] mb-4">
+            <p className="text-[11px] tracking-[0.1em] uppercase text-[#8d7244] mb-4">
               Associate Counsel • Tax Practice
             </p>
             <p className="text-body-m text-graphite m-0">
@@ -287,7 +287,7 @@ export default function HomePage() {
         <span className="font-mono text-[10px] tracking-[0.18em] text-[#776d60]">— CHAMBER PHILOSOPHY</span>
       </section>
 
-      <PublicationsSection />
+      <PublicationsSection volumeOneOnly />
       <InsightsSection />
 
       <section className="py-16 md:py-20 px-[7vw] bg-[#b18b4d] text-white flex flex-col md:flex-row items-center justify-between gap-8">
@@ -316,24 +316,25 @@ export default function HomePage() {
             </p>
             <div className="mt-10 grid gap-5">
               <div>
-                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">OFFICE</span>
+                <span className="block text-[9px] tracking-[0.18em] text-[#8d7244]">OFFICE</span>
                 <b className="block font-serif text-[18px]">Mehta Street, 16-E Temple Road</b>
                 <small className="block text-[10px] text-[#858b90]">Mozang Chungi, Lahore, Pakistan</small>
               </div>
               <div>
-                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">OFFICE PHONE</span>
+                <span className="block text-[9px] tracking-[0.18em] text-[#8d7244]">OFFICE PHONE</span>
                 <b className="block font-serif text-[18px]">042-36361182</b>
                 <small className="block text-[10px] text-[#858b90]">Office landline</small>
               </div>
               <div>
-                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">MOBILE</span>
+                <span className="block text-[9px] tracking-[0.18em] text-[#8d7244]">MOBILE</span>
                 <b className="block font-serif text-[18px]">
                   <a className="block hover:text-brass" href="tel:+923219441019">+92 321-9441019</a>
                   <a className="block hover:text-brass" href="tel:+923236300905">+92 323-6300905</a>
+                  <a className="block hover:text-brass" href="tel:+923248060396">+92 324-8060396</a>
                 </b>
               </div>
               <div>
-                <span className="block text-[9px] tracking-[0.18em] text-[#927647]">EMAIL</span>
+                <span className="block text-[9px] tracking-[0.18em] text-[#8d7244]">EMAIL</span>
                 <b className="block font-serif text-[18px]">khmayaz@hotmail.com</b>
               </div>
             </div>

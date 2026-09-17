@@ -67,7 +67,6 @@ const jsonLd = {
   telephone: "+92-321-9441019",
   email: "khmayaz@hotmail.com",
   foundingDate: "1964",
-  priceRange: "$$",
 };
 
 export default function RootLayout({ children }) {

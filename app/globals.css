@@ -30,7 +30,7 @@
 @layer components {
   /* Eyebrow / section label — mono, tracked, brass-adjacent */
   .eyebrow {
-    @apply font-mono text-label uppercase text-[#7b6b4e] font-medium;
+    @apply font-mono text-label uppercase text-[#78684c] font-medium;
   }
 
   /* Buttons */
@@ -116,7 +116,7 @@
     animation-play-state: paused;
   }
   .marquee-item {
-    @apply font-mono text-[9px] tracking-[0.18em] text-[#717982] whitespace-nowrap inline-flex items-center gap-8 pr-8;
+    @apply font-mono text-[9px] tracking-[0.18em] text-[#6f767f] whitespace-nowrap inline-flex items-center gap-8 pr-8;
   }
   .marquee-dot {
     @apply text-brass;
@@ -141,7 +141,7 @@
     @apply p-5;
   }
   .book-info .book-year {
-    @apply font-mono text-[9px] tracking-[0.16em] text-[#927647];
+    @apply font-mono text-[9px] tracking-[0.16em] text-[#8d7244];
   }
   .book-info h3 {
     @apply font-serif text-[18px] leading-snug my-2;

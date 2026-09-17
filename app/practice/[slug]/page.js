@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { practiceAreas, getPracticeArea } from "@/lib/practiceAreas";
+import { getTeamMembersByPracticeArea } from "@/lib/team";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export function generateStaticParams() {
   return practiceAreas.map((area) => ({ slug: area.slug }));
@@ -11,7 +13,7 @@ export async function generateMetadata({ params }) {
   const area = getPracticeArea(slug);
   if (!area) return {};
   return {
-    title: `${area.title} | Khawaja and Associates`,
+    title: area.title,
     description: area.metaDescription,
   };
 }
@@ -21,9 +23,23 @@ export default async function PracticeAreaPage({ params }) {
   const area = getPracticeArea(slug);
   if (!area) notFound();
 
+  const relevantProfessionals = getTeamMembersByPracticeArea(area.slug).filter(
+    (m) => m.status === "current"
+  );
+  const relatedPracticeAreas = practiceAreas.filter(
+    (a) => a.category === area.category && a.slug !== area.slug
+  );
+
   return (
     <main>
       <section className="pt-16 md:pt-20 px-[7vw] pb-0">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Practice Areas", href: "/practice" },
+            { label: area.title },
+          ]}
+        />
         <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/practice">
           ← All practice areas
         </Link>
@@ -62,6 +78,47 @@ export default async function PracticeAreaPage({ params }) {
           </div>
         </div>
       </section>
+
+      {relevantProfessionals.length > 0 && (
+        <section className="pb-16 px-[7vw]">
+          <h2 className="font-mono text-[10px] tracking-[0.18em] text-[#8d7244] mb-4">
+            RELEVANT PROFESSIONALS
+          </h2>
+          <div className="flex flex-wrap gap-4">
+            {relevantProfessionals.map((member) => (
+              <Link
+                key={member.slug}
+                href={`/team/${member.slug}`}
+                className="block border border-line px-5 py-4 no-underline text-ink hover:border-brass transition-colors"
+              >
+                <span className="font-serif text-[17px]">{member.name}</span>
+                <span className="block text-[11px] uppercase tracking-[0.05em] text-[#8d7244] mt-1">
+                  {member.designation}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {relatedPracticeAreas.length > 0 && (
+        <section className="pb-16 px-[7vw]">
+          <h2 className="font-mono text-[10px] tracking-[0.18em] text-[#8d7244] mb-4">
+            RELATED PRACTICE AREAS
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {relatedPracticeAreas.map((related) => (
+              <Link
+                key={related.slug}
+                href={`/practice/${related.slug}`}
+                className="text-[12px] font-bold no-underline border border-line px-3 py-2 text-ink hover:border-brass hover:text-brass transition-colors"
+              >
+                {related.title} →
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="py-16 md:py-20 px-[7vw] bg-[#b18b4d] text-white flex flex-col md:flex-row items-center justify-between gap-8">
         <div>

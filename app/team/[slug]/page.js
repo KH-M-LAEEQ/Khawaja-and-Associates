@@ -2,7 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { teamMembers, getTeamMember } from "@/lib/team";
+import { getPracticeArea } from "@/lib/practiceAreas";
+import { getPublicationsByAuthorName } from "@/lib/publications";
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import Seal from "@/components/Seal";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export function generateStaticParams() {
   return teamMembers.map((member) => ({ slug: member.slug }));
@@ -13,7 +17,7 @@ export async function generateMetadata({ params }) {
   const member = getTeamMember(slug);
   if (!member) return {};
   return {
-    title: `${member.name} | Khawaja and Associates`,
+    title: member.name,
     description: member.metaDescription,
   };
 }
@@ -23,15 +27,38 @@ export default async function TeamMemberPage({ params }) {
   const member = getTeamMember(slug);
   if (!member) notFound();
 
+  const relatedPracticeAreas = (member.practiceAreaSlugs || [])
+    .map((s) => getPracticeArea(s))
+    .filter(Boolean);
+  const relatedPublications = getPublicationsByAuthorName(member.name);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: member.name,
+    jobTitle: member.designation,
+    description: member.metaDescription,
+    url: `${SITE_URL}/team/${member.slug}`,
+    worksFor: { "@type": "Organization", name: SITE_NAME },
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="pt-16 md:pt-20 px-[7vw] pb-0">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Our Team", href: "/team" },
+            { label: member.name },
+          ]}
+        />
         <Link className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1" href="/team">
           ← Back to team
         </Link>
         <div className="eyebrow mt-6">{member.role}</div>
         <h1 className="font-serif font-medium text-display-l mt-3 mb-2">{member.name}</h1>
-        <p className="text-[13px] tracking-[0.05em] uppercase text-[#927647]">{member.designation}</p>
+        <p className="text-[13px] tracking-[0.05em] uppercase text-[#8d7244]">{member.designation}</p>
       </section>
 
       <section className="pt-14 pb-24 px-[7vw]">
@@ -79,6 +106,42 @@ export default async function TeamMemberPage({ params }) {
                 </div>
               </>
             ) : null}
+
+            {relatedPracticeAreas.length > 0 && (
+              <>
+                <h2 className={`font-serif text-[26px] mb-4 ${member.bio || member.credentials ? "mt-10" : ""}`}>
+                  Practice areas
+                </h2>
+                <div className="flex flex-wrap gap-3 mb-2">
+                  {relatedPracticeAreas.map((area) => (
+                    <Link
+                      key={area.slug}
+                      href={`/practice/${area.slug}`}
+                      className="text-[12px] font-bold no-underline border border-line px-3 py-2 text-ink hover:border-brass hover:text-brass transition-colors"
+                    >
+                      {area.title} →
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {relatedPublications.length > 0 && (
+              <>
+                <h2 className="font-serif text-[26px] mb-4 mt-10">Publications</h2>
+                <div className="flex flex-wrap gap-3 mb-2">
+                  {relatedPublications.map((book) => (
+                    <Link
+                      key={book.slug}
+                      href={`/publications/${book.slug}`}
+                      className="text-[12px] font-bold no-underline border border-line px-3 py-2 text-ink hover:border-brass hover:text-brass transition-colors"
+                    >
+                      {book.placeholder ? "Publication" : book.title} →
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
