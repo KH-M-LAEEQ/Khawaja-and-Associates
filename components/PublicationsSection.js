@@ -32,9 +32,19 @@ export default function PublicationsSection({ volumeOneOnly = false }) {
         )}
         {items.map((book, i) => (
           <article key={book.slug || book.title || i} className="book-card">
-            <div className="book-cover">
-              <BookCover cover={book.cover} title={book.title || "Untitled"} />
-            </div>
+            {book.slug ? (
+              <Link href={`/publications/${book.slug}`} className="book-cover block">
+                <BookCover cover={book.cover} title={book.title || "Untitled"} />
+              </Link>
+            ) : book.link ? (
+              <a href={book.link} target="_blank" rel="noopener" className="book-cover block">
+                <BookCover cover={book.cover} title={book.title || "Untitled"} />
+              </a>
+            ) : (
+              <div className="book-cover">
+                <BookCover cover={book.cover} title={book.title || "Untitled"} />
+              </div>
+            )}
             <div className="book-info">
               {book.year ? <div className="book-year">{book.year}</div> : null}
               <h3>{book.title || "Untitled"}</h3>
