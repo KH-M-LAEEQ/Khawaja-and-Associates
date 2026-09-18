@@ -287,7 +287,7 @@ export default function HomePage() {
         <span className="font-mono text-[10px] tracking-[0.18em] text-[#776d60]">— CHAMBER PHILOSOPHY</span>
       </section>
 
-      <PublicationsSection volumeOneOnly />
+      <PublicationsSection preview />
       <InsightsSection />
 
       <section className="py-16 md:py-20 px-[7vw] bg-[#b18b4d] text-white flex flex-col md:flex-row items-center justify-between gap-8">

@@ -2,8 +2,8 @@ import Link from "next/link";
 import BookCover from "@/components/BookCover";
 import { publications } from "@/lib/publications";
 
-export default function PublicationsSection({ volumeOneOnly = false }) {
-  const items = volumeOneOnly ? publications.filter((b) => b.volume === 1) : publications;
+export default function PublicationsSection({ preview = false }) {
+  const items = preview ? publications.slice(0, 4) : publications;
   const failed = items.length === 0;
 
   return (
@@ -15,7 +15,7 @@ export default function PublicationsSection({ volumeOneOnly = false }) {
             Authored <em className="italic text-brass">works.</em>
           </h2>
         </div>
-        {volumeOneOnly && (
+        {preview && (
           <Link
             className="text-ink font-bold text-[12px] no-underline border-b border-brass pb-1 self-start"
             href="/publications"
