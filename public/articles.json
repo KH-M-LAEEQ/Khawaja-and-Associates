@@ -1,13 +1,19 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-09-22T16:29:16.828Z",
+  "fetchedAt": "2026-09-22T20:59:03.031Z",
   "articles": [
     {
       "title": "CHAIRMAN FBR MEETS THE DELEGATION OF TAX BAR ASSOCIATION AT LTO LAHORE",
       "date": "Sep 22, 2026",
       "url": "https://www.fbr.gov.pk/pr/chairman-fbr-meets-the-delegation-of-tax-bar/174678",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+      "image": "https://download1.fbr.gov.pk/MediaManager/01-taxbar-20260922.png"
+    },
+    {
+      "title": "CHAIRMAN FBR HOLDS MEETING WITH LAHORE CHAMBER OF COMMERCE AND INDUSTRY AT LTO LAHORE",
+      "date": "Sep 22, 2026",
+      "url": "https://www.fbr.gov.pk/pr/chairman-fbr-holds-meeting-with-lahore-chambe/174679",
+      "image": "https://download1.fbr.gov.pk/MediaManager/01-commerce-20260922.png"
     },
     {
       "title": "Pakistan Customs Seizes Arms and Ammunition Worth Rs32 Million",
@@ -32,12 +38,6 @@
       "date": "Aug 30, 2026",
       "url": "https://www.fbr.gov.pk/pr/rto-ii-karachi-launches-major-enforcement-ope/174668",
       "image": "https://download1.fbr.gov.pk/MediaManager/01-rto-karachi-20260830.png"
-    },
-    {
-      "title": "FBR–ICAP Jointly Organised a Seminar on Income Tax Return Filing for Tax Year 2026",
-      "date": "Aug 18, 2026",
-      "url": "https://www.fbr.gov.pk/pr/fbr-icap-jointly-organised-a-seminar-on-incom/174662",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     }
   ]
 }
