@@ -1,8 +1,14 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-09-22T11:08:13.744Z",
+  "fetchedAt": "2026-09-22T16:29:16.828Z",
   "articles": [
+    {
+      "title": "CHAIRMAN FBR MEETS THE DELEGATION OF TAX BAR ASSOCIATION AT LTO LAHORE",
+      "date": "Sep 22, 2026",
+      "url": "https://www.fbr.gov.pk/pr/chairman-fbr-meets-the-delegation-of-tax-bar/174678",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
     {
       "title": "Pakistan Customs Seizes Arms and Ammunition Worth Rs32 Million",
       "date": "Sep 14, 2026",
@@ -32,12 +38,6 @@
       "date": "Aug 18, 2026",
       "url": "https://www.fbr.gov.pk/pr/fbr-icap-jointly-organised-a-seminar-on-incom/174662",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "Ceremony Held to Recognize FBR Officers Nominated for Prestigious National Civil Awards",
-      "date": "Aug 17, 2026",
-      "url": "https://www.fbr.gov.pk/pr/ceremony-held-to-recognize-fbr-officers-nomin/174658",
-      "image": "https://download1.fbr.gov.pk/MediaManager/02-awards.png"
     }
   ]
 }
