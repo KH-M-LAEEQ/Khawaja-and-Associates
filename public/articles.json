@@ -1,8 +1,14 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-09-25T11:22:31.156Z",
+  "fetchedAt": "2026-09-25T16:46:23.346Z",
   "articles": [
+    {
+      "title": "FBR sets up National Faceless Centre: no more direct contact with tax officers",
+      "date": "Oct 02, 2026",
+      "url": "https://www.fbr.gov.pk/pr/fbr-sets-up-national-faceless-centre-no-more/174682",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
     {
       "title": "CHAIRMAN FBR MEETS THE DELEGATION OF TAX BAR ASSOCIATION AT LTO LAHORE",
       "date": "Sep 22, 2026",
@@ -32,12 +38,6 @@
       "date": "Sep 07, 2026",
       "url": "https://www.fbr.gov.pk/pr/asaan-tajir-return-filling---seminar-at-islam/174671",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "RTO-II Karachi Launches Major Enforcement Operation Against Illegal Cigarette Manufacturing  -Illegal cigarette manufacturing facility sealed; machinery and raw & finished stock worth hundreds of millions of rupees confiscated",
-      "date": "Aug 30, 2026",
-      "url": "https://www.fbr.gov.pk/pr/rto-ii-karachi-launches-major-enforcement-ope/174668",
-      "image": "https://download1.fbr.gov.pk/MediaManager/01-rto-karachi-20260830.png"
     }
   ]
 }
