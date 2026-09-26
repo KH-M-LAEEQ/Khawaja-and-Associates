@@ -1,12 +1,18 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-09-26T15:58:37.156Z",
+  "fetchedAt": "2026-09-26T20:45:23.648Z",
   "articles": [
     {
       "title": "FBR sets up National Faceless Centre: no more direct contact with tax officers",
       "date": "Oct 02, 2026",
       "url": "https://www.fbr.gov.pk/pr/fbr-sets-up-national-faceless-centre-no-more/174682",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
+    {
+      "title": "Statement by the Federal Board of Revenue",
+      "date": "Sep 26, 2026",
+      "url": "https://www.fbr.gov.pk/pr/statement-by-the-federal-board-of-revenue/174684",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     },
     {
@@ -32,12 +38,6 @@
       "date": "Sep 09, 2026",
       "url": "https://www.fbr.gov.pk/pr/chairman-fbr-holds-meeting-with-fpcci-delegat/174673",
       "image": "https://download1.fbr.gov.pk/MediaManager/01-fpcci-20260909.png"
-    },
-    {
-      "title": "Asaan Tajir Return filling - Seminar at Islamabad Chamber of Commerce & Industries",
-      "date": "Sep 07, 2026",
-      "url": "https://www.fbr.gov.pk/pr/asaan-tajir-return-filling---seminar-at-islam/174671",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     }
   ]
 }
