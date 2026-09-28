@@ -1,14 +1,8 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-09-27T21:02:03.130Z",
+  "fetchedAt": "2026-09-28T04:13:51.233Z",
   "articles": [
-    {
-      "title": "FBR sets up National Faceless Centre: no more direct contact with tax officers",
-      "date": "Oct 02, 2026",
-      "url": "https://www.fbr.gov.pk/pr/fbr-sets-up-national-faceless-centre-no-more/174682",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
     {
       "title": "Lahore High Court: Money Laundering Cases Can Go Ahead Without Waiting for Tax Cases to Finish",
       "date": "Sep 27, 2026",
@@ -19,6 +13,12 @@
       "title": "Statement by the Federal Board of Revenue",
       "date": "Sep 26, 2026",
       "url": "https://www.fbr.gov.pk/pr/statement-by-the-federal-board-of-revenue/174684",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
+    {
+      "title": "FBR sets up National Faceless Centre: no more direct contact with tax officers",
+      "date": "Sep 25, 2026",
+      "url": "https://www.fbr.gov.pk/pr/fbr-sets-up-national-faceless-centre-no-more/174682",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     },
     {
