@@ -1,8 +1,20 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-10-06T12:56:15.224Z",
+  "fetchedAt": "2026-10-06T22:26:49.324Z",
   "articles": [
+    {
+      "title": "Two FBR Enforcement Officials Embrace Martyrdom in Firing Incident at Dera Ismail Khan",
+      "date": "Oct 06, 2026",
+      "url": "https://www.fbr.gov.pk/pr/two-fbr-enforcement-officials-embrace-martyrd/174692",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
+    {
+      "title": "Minister for Finance & Revenue Condemns Attack on FBR Enforcement Personnel in D.I. Khan",
+      "date": "Oct 06, 2026",
+      "url": "https://www.fbr.gov.pk/pr/minister-for-finance-revenue-condemns-attack/174694",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
     {
       "title": "FBR Busts Rs. 9.41 Billion Wealth Statement Fraud; Money Laundering Case Registered",
       "date": "Sep 30, 2026",
@@ -26,18 +38,6 @@
       "date": "Sep 26, 2026",
       "url": "https://www.fbr.gov.pk/pr/statement-by-the-federal-board-of-revenue/174684",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "FBR sets up National Faceless Centre: no more direct contact with tax officers",
-      "date": "Sep 25, 2026",
-      "url": "https://www.fbr.gov.pk/pr/fbr-sets-up-national-faceless-centre-no-more/174682",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "CHAIRMAN FBR MEETS THE DELEGATION OF TAX BAR ASSOCIATION AT LTO LAHORE",
-      "date": "Sep 22, 2026",
-      "url": "https://www.fbr.gov.pk/pr/chairman-fbr-meets-the-delegation-of-tax-bar/174678",
-      "image": "https://download1.fbr.gov.pk/MediaManager/01-taxbar-20260922.png"
     }
   ]
 }
