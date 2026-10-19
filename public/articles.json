@@ -1,8 +1,14 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-10-19T12:26:36.539Z",
+  "fetchedAt": "2026-10-19T22:05:16.642Z",
   "articles": [
+    {
+      "title": "FBR initiates disciplinary action for violation of Conduct Rules",
+      "date": "Oct 19, 2026",
+      "url": "https://www.fbr.gov.pk/pr/fbr-initiates-disciplinary-action-for-violati/174699",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
     {
       "title": "Chairman FBR Directs Field Formations to Resolve Business Community’s Issues Through Regular Meetings",
       "date": "Oct 14, 2026",
@@ -31,12 +37,6 @@
       "title": "Special Tax Scheme for Small Shopkeepers in Initial Implementation Phase",
       "date": "Sep 29, 2026",
       "url": "https://www.fbr.gov.pk/pr/special-tax-scheme-for-small-shopkeepers-in-i/174688",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "Lahore High Court: Money Laundering Cases Can Go Ahead Without Waiting for Tax Cases to Finish",
-      "date": "Sep 27, 2026",
-      "url": "https://www.fbr.gov.pk/pr/lahore-high-court-money-laundering-cases-can/174686",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     }
   ]
