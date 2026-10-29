@@ -1,8 +1,14 @@
 {
   "source": "Federal Board of Revenue (FBR), Government of Pakistan",
   "sourceUrl": "https://www.fbr.gov.pk/pr",
-  "fetchedAt": "2026-10-29T12:27:47.551Z",
+  "fetchedAt": "2026-10-29T22:31:36.898Z",
   "articles": [
+    {
+      "title": "FBR REITERATES THAT FACELESS CUSTOMS ASSESSMENT IS A DIGITAL, NOT PORT-DEPENDENT, FUNCTION",
+      "date": "Oct 29, 2026",
+      "url": "https://www.fbr.gov.pk/pr/fbr-reiterates-that-faceless-customs-assessme/174702",
+      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
+    },
     {
       "title": "FBR initiates disciplinary action for violation of Conduct Rules",
       "date": "Oct 19, 2026",
@@ -31,12 +37,6 @@
       "title": "FBR Busts Rs. 9.41 Billion Wealth Statement Fraud; Money Laundering Case Registered",
       "date": "Sep 30, 2026",
       "url": "https://www.fbr.gov.pk/pr/fbr-busts-rs-941-billion-wealth-statement-fra/174690",
-      "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
-    },
-    {
-      "title": "Special Tax Scheme for Small Shopkeepers in Initial Implementation Phase",
-      "date": "Sep 29, 2026",
-      "url": "https://www.fbr.gov.pk/pr/special-tax-scheme-for-small-shopkeepers-in-i/174688",
       "image": "https://download1.fbr.gov.pk/MediaManager/english/images/pressrelease/FBR-Logo.jpg"
     }
   ]
